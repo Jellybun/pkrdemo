@@ -15,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div style={{ backgroundImage: "url('https://img.freepik.com/free-vector/black-casino-playing-card-background_1017-32733.jpg?w=1800&t=st=1685436633~exp=1685437233~hmac=33ba15cc8027b87a57020671119e18f0f69f07a0a0c9ad8bec79ab0eec7fc880')" }} className="bg-cover bg-center h-screen">
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
